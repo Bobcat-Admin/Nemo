@@ -7,6 +7,7 @@
 - git clone
 - npm i
 - npm run debug
+- open http://localhost:8192/api/greeting
 
 How to commit:
 git add
