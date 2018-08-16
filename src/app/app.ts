@@ -36,6 +36,7 @@ app.use(cookieParser(Config().session.secret))
 // )
 app.use(express.static(path.join(rootDir(), "public")))
 
+app.use("/api/project", routes.project)
 app.use("/api", routes.api)
 
 // catch 404 and forward to error handler

@@ -6,5 +6,6 @@ npm-debug.log
 
 # dist
 dist
+projects
 .vscode
 .DS_Store
