@@ -1,0 +1,5 @@
+FROM node:carbon
+ENV NODE_ENV development
+WORKDIR /usr/src/app
+EXPOSE 8192
+CMD npm run debug
