@@ -39,8 +39,14 @@
     "@types/ramda": "^0.25.13",
     "@types/serve-favicon": "^2.2.30",
     "@types/winston": "^2.3.7",
+    "cz-conventional-changelog": "^2.1.0",
     "nodemon": "^1.14.3",
     "tslint": "^5.9.1",
     "typescript": "^2.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
