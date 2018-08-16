@@ -7,3 +7,7 @@
 - git clone
 - npm i
 - npm run debug
+
+How to commit:
+git add
+git cz
