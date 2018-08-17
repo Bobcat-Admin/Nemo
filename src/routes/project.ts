@@ -9,14 +9,13 @@ const rootPath = "./projects"
 
 const gitPath = "http://gitlab.zhiyinlou.com/bpit/FETeam/FE-standard.git"
 
-router.post("/", async (req, res) => {
+router.post("/", async (req, res, next) => {
   const { name } = req.body
   logger.info("want to create the project: ", name)
 
   if (!fs.existsSync(rootPath)) {
     fs.mkdirSync(rootPath)
   }
-
   try {
     await execCMD(`git clone ${gitPath} ${rootPath}/${name}`)
     const rmGit = `rm -rf ${rootPath}/${name}/.git`
