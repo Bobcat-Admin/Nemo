@@ -34,6 +34,7 @@ app.use(express.static(path.join(rootDir(), "public")))
 // all your stuff goes here
 app.use("/api/project", routes.project)
 app.use("/api", routes.api)
+app.use("/api/base", routes.base)
 
 // The error handler must be before any other error middleware
 app.use(Raven.errorHandler())
