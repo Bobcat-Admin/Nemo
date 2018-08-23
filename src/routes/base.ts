@@ -12,7 +12,7 @@ router.post("/", async (req, res, next) => {
   logger.info("want to create the page: ", pageName)
 
   const rootPath = './projects/'+ projectName +'/src/views/'
-  const _page = '<!--页面名称：'+ pageName +' 页面路径 '+ rootPath +'-->\r<template>\n  <div class="xxx-page"></div>\n<template>\n<script type="text/javascript">\n  export default {\n    data() {\n      return{\n\n      }  \n    },\n    computed: {\n\n    },\n    beforeCreate() {\n\n    },\n    created() {\n\n    },\n    beforeMount() {\n\n    },\n    mounted() {\n\n    }, \n    beforeUpdate() {\n\n    }, \n    updated() {\n\n    }, \n    beforeDestroy() {\n\n    },\n    destroyed() {\n\n    }, \n    methods: {\n\n    },\n    watch: {\n\n    }\n  };\n</script>\n<style scoped> \n\n</style>'
+  const _page = '<!--页面名称：'+ pageName +' 页面路径 '+ rootPath +'-->\r<template>\n  <div class="'+ pageName +'-page"></div>\n<template>\n<script type="text/javascript">\n  export default {\n    data() {\n      return{\n\n      }  \n    },\n    computed: {\n\n    },\n    beforeCreate() {\n\n    },\n    created() {\n\n    },\n    beforeMount() {\n\n    },\n    mounted() {\n\n    }, \n    beforeUpdate() {\n\n    }, \n    updated() {\n\n    }, \n    beforeDestroy() {\n\n    },\n    destroyed() {\n\n    }, \n    methods: {\n\n    },\n    watch: {\n\n    }\n  };\n</script>\n<style scoped> \n\n</style>'
 
 
   try {
